@@ -9,9 +9,32 @@
 
   </head>
   <body class="is-preload">
+
+
+    <!-- Header -->
+        <header id="header">
+          <a class="logo" href="https://the-hacking-project-paris.herokuapp.com">The Hacking Project 2.0</a>
+          <nav>
+            <a href="#menu">Menu</a>
+          </nav>
+        </header>
+
+      <!-- Nav -->
+        <nav id="menu">
+          <ul class="links">
+            <li><a href="https://the-hacking-project-paris.herokuapp.com">Home</a></li>
+            <li><a href="https://www.thehackingproject.org/">Site official</a></li>
+            <li><a href="https://www.facebook.com/thehackingproject/">Facebook ❤️</a></li>
+          </ul>
+        </nav>
+
+
+
+
+
     <%= yield %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  
+
 <p>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"b6bb9b2b27c2dcf47afcc216c","lid":"9fb0e97ee6"}) })</script>
 </p>
