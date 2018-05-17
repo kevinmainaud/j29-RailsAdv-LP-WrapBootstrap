@@ -5,16 +5,60 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+    <%= stylesheet_link_tag    'boomerang.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body class="is-preload">
+    <%= render 'layouts/layout/header' %>
     <%= yield %>
+    <%= render 'layouts/layout/footer' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  
-<p>
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"b6bb9b2b27c2dcf47afcc216c","lid":"9fb0e97ee6"}) })</script>
-</p>
+    <%= javascript_include_tag 'boomerang.min', 'data-turbolinks-track': 'reload' %>
+      
+
+    <%= javascript_include_tag 'slidebar/slidebar.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'classie.js', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Bootstrap Extensions -->
+
+    <!-- Plugins: Sorted A-Z -->
+    <%= javascript_include_tag 'vendor/adaptive-backgrounds/adaptive-backgrounds.js', 'data-turbolinks-track': 'reload'  %>
+    <%= javascript_include_tag 'vendor/countdown/js/jquery.countdown.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/dropzone/dropzone.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/easy-pie-chart/jquery.easypiechart.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/fancybox/js/jquery.fancybox.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/flip/flip.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/footer-reveal/footer-reveal.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/gradientify/jquery.gradientify.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/headroom/headroom.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/headroom/jquery.headroom.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/input-mask/input-mask.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/instafeed/instafeed.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/milestone-counter/jquery.countTo.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/nouislider/js/nouislider.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/paraxify/paraxify.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/select2/js/select2.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/sticky-kit/sticky-kit.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/swiper/js/swiper.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/textarea-autosize/autosize.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/typeahead/typeahead.bundle.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/typed/typed.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/vide/vide.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/viewport-checker/viewportchecker.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/wow/wow.min.js', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'vendor/isotope/isotope.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'vendor/imagesloaded/imagesloaded.pkgd.min.js', 'data-turbolinks-track': 'reload' %> %>
+
+
+    <!-- App JS -->
+    <%= javascript_include_tag 'boomerang.min.js', 'data-turbolinks-track': 'reload' %>
+    <p>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"b6bb9b2b27c2dcf47afcc216c","lid":"9fb0e97ee6"}) })</script>
+    </p>
 
   </body>
 </html>
