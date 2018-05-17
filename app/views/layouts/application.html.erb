@@ -11,44 +11,23 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body class="is-preload">
-<<<<<<< HEAD
-    <%= render 'layouts/layout/header' %>
-=======
-
-
     <!-- Header -->
-        <header id="header">
-          <a class="logo" href="https://the-hacking-project-paris.herokuapp.com">The Hacking Project 2.0</a>
-          <nav>
-            <a href="#menu">Menu</a>
-          </nav>
-        </header>
-
-      <!-- Nav -->
-        <nav id="menu">
-          <ul class="links">
-            <li><a href="https://the-hacking-project-paris.herokuapp.com">Home</a></li>
-            <li><a href="https://www.thehackingproject.org/">Site official</a></li>
-            <li><a href="https://www.facebook.com/thehackingproject/">Facebook ❤️</a></li>
-          </ul>
-        </nav>
+    <%= render 'layouts/layout/header' %>
 
 
 
 
-
->>>>>>> 9f098d27fe79090364fead8d157e7730ade6b595
     <%= yield %>
+    
+        <!-- Footer -->
     <%= render 'layouts/layout/footer' %>
+
+        <!-- Javascript -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-<<<<<<< HEAD
     <%= javascript_include_tag 'boomerang.min', 'data-turbolinks-track': 'reload' %>
-
-
     <%= javascript_include_tag 'slidebar/slidebar.js', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'classie.js', 'data-turbolinks-track': 'reload' %>
 
-    <!-- Bootstrap Extensions -->
 
     <!-- Plugins: Sorted A-Z -->
     <%= javascript_include_tag 'vendor/adaptive-backgrounds/adaptive-backgrounds.js', 'data-turbolinks-track': 'reload'  %>
@@ -83,15 +62,11 @@
 
     <!-- App JS -->
     <%= javascript_include_tag 'boomerang.min.js', 'data-turbolinks-track': 'reload' %>
-    
+
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"b6bb9b2b27c2dcf47afcc216c","lid":"9fb0e97ee6"}) })</script>
 
-=======
-
-<p>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"b6bb9b2b27c2dcf47afcc216c","lid":"9fb0e97ee6"}) })</script>
-</p>
->>>>>>> 9f098d27fe79090364fead8d157e7730ade6b595
+
 
   </body>
 </html>
