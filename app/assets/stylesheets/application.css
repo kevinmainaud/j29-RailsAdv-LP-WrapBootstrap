@@ -37,6 +37,9 @@ html, body{
 .bgimgnew{
   background-image: url("https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
+.bgimgreco{
+  background-image: url("https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+}
 
 .imgtem img{
   width: 90px;
@@ -47,6 +50,9 @@ html, body{
   background-color: red;
 }
 
+.logo:hover{
+  background-color: transparent;
+}
 
 
  /* Basic */
